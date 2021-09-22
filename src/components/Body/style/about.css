@@ -1,0 +1,86 @@
+.about {
+    padding: 48px 0px;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+} 
+
+.spinner {
+    min-width: 400px;
+    max-width: 550px;
+    width: 40%;
+    animation-name: spin;
+    animation-duration: 60000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.intro {
+    max-width: 60%;
+}
+
+.animate-name {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px auto;
+    margin-bottom: 32px;
+    font-size: 36px;
+    font-weight: 500;
+    animation: 
+        type 3s steps(15), 
+        animated-cursor 1000ms steps(15, end) infinite 3s; 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid orange;
+    width: 15ch;
+    text-align: center;
+}
+
+@keyframes type{
+    from{
+        width: 0ch;
+    }
+    to {
+        width: 15ch;
+    }
+}
+
+@keyframes animated-cursor{
+    from{border-right-color: orange;}
+    to{border-right-color: transparent;}
+}
+
+.info {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .landing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spinner {
+        display: none;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+}

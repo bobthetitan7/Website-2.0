@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    padding: 12px;
+}
+
+.logo {
+    display: flex;
+    font-size: 36px;
+    color: aqua;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 800px){
+    .logo{
+        font-size: 24px;
+    }
+}

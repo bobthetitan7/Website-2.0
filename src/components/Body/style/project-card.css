@@ -1,0 +1,92 @@
+.projectCard{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    margin: 20px 0px;
+    padding: 8px 0px;
+}
+
+.projectPhoto {
+    width: 40%;
+}
+
+.projectInfo {
+    margin-right: 24px;
+    vertical-align: center;
+    margin: auto 0;
+    margin-right: 30px;
+}
+
+.projectInfo p {
+    font-size: 20px;
+}
+
+.projectTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.githubIcon{
+    margin-right: 4px;
+}
+
+.projectTag {
+    display: flex;
+    max-width: 50%;
+    flex-wrap: wrap;
+}
+
+.tagItem {
+    padding: 4px 8px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    margin: 6px 0px;
+    margin-right: 8px;
+}
+
+.projectLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.projectLinks {
+    margin: 8px 0px;
+    display: flex;
+}
+
+.linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.linkButton i{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .projectPhoto {
+        width: 70%;
+        align-content: center;
+        margin: auto;
+    }
+
+    .projectCard {
+        flex-direction: column-reverse;
+    }
+
+    .projectInfo {
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+
+    .projectTag{
+        max-width: 100%;
+    }
+}
