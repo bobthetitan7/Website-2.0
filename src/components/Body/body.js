@@ -6,10 +6,12 @@ import Contact from "./components/contact";
 import Project from "./components/project";
 import Skill from "./components/skill";
 import Work from "./components/work";
+import preLoader from "./preloader";
 
 const Body = () => {
     return (
         <div className='body'>
+            <preLoader />
             <section id='about'>
                 <About />
             </section>

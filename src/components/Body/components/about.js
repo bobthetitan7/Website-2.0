@@ -11,8 +11,8 @@ const About = () => {
                         Hey, I'm Jerry.
                     </div>
                     <div className='info'>
-                        I am an second year University of Waterloo student looking
-                        to be a part of something exciting
+                        I am an second year University of Waterloo student studying 
+                        Mathematics!
                     </div>
                 </div>
                 <div className='graphic'>
