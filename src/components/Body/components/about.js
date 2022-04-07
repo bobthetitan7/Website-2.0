@@ -11,8 +11,8 @@ const About = () => {
                         Hey, I'm Jerry.
                     </div>
                     <div className='info'>
-                        I am an second year University of Waterloo student looking
-                        to be a part of something exciting
+                    I am a student at the University of Waterloo with experience in 
+                    fullstack and infrastructure/system development. 
                     </div>
                 </div>
                 <div className='graphic'>
